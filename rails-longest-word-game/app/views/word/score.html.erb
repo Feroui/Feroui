@@ -1,0 +1,19 @@
+<h1>Word#score</h1>
+<p>Find me in app/views/word/score.html.erb</p>
+
+<h3>your grid</h3>
+<%= @grid_string %>
+<h3>your guess</h3>
+<%= @guess %>
+<h3>includes?</h3>
+<%= @include %>
+<h3>translation</h3>
+<% if !@translation.nil?%>
+<%= @translation %>
+<%else%>
+<%= "No translation"%>
+<%end%>
+<h3>SCORE:</h3><%=@score%>
+<br>
+
+<%=link_to 'Play again !', '/game'%>
